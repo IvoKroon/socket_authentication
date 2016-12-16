@@ -1,4 +1,4 @@
-var socket = io('http://localhost:3000');
+var socket = io('http://145.24.222.221:8080');
 
 document.getElementById("submitter").addEventListener("click", function () {
 

@@ -48,6 +48,7 @@ io.on('connection', function (socket) {
 });
 
 function login(logInData, socket) {
+    console.log("trying to login");
     //check if the user isn't already logged in.
     User.findOne({'socket_id': socket.id}, function (err, check_data) {
         if (!check_data) {
