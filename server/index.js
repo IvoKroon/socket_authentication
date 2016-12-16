@@ -6,7 +6,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 var db = mongoose.connect("mongodb://localhost/sockettestauth");
-var User = require('./../models/userModel');
+var User = require('./models/userModel');
 
 var timeinterval;
 
